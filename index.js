@@ -1,9 +1,9 @@
-let fs = require('fs');
-let StatMode = require('stat-mode');
-let colors = require('colors');
+const fs = require('fs');
+const StatMode = require('stat-mode');
+const colors = require('colors');
 
 fs.stat('./cat.jpg', function(err, stats) {
-    let statMode = new StatMode(stats);
+    const statMode = new StatMode(stats);
     console.log(statMode.toString());
 });
 
